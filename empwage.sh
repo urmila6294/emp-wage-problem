@@ -16,4 +16,6 @@ Full_Day_Hr=8
 Daily_Emp_Wage=$(($Wage_Per_Hr*$Full_Day_Hr))
 echo "Daily Emp Wage is:" $Daily_Emp_Wage
 
+Parttime_Hr=4
+
 
