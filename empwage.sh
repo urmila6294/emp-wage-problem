@@ -34,3 +34,15 @@ monthly_emp_wage_full=$(( $DailyEmpwagefull*$Working_day_per_month ))
 monthly_emp_wage_part=$(( $DailyEmpwagepart*$Working_day_per_month ))
 echo "monthly wage for full time": $monthly_emp_wage_full
 echo "monthly wage for part time": $monthly_emp_wage_part
+
+max_hr_in_month=100
+totalEmphrs=0
+totalworkingdays=0
+number_working_days=20
+while [ $totalEmphrs -lt $max_hr_in_month -a $totalWorkingdays -lt $number_working_days ]
+do
+        ((totalWorkingdays++))
+        
+       
+       
+done
