@@ -19,13 +19,18 @@ echo "Daily Emp Wage is:" $Daily_Emp_Wage
 Parttime_Hr=4
         
         case $Employee in
-            1)echo "Daily Employee Wage Full Time - "$DailyEmpWage=$(($Full_Day_Hr
+            1)echo "Daily Employee Wage Full Time - "$DailyEmpWagefull=$(($Full_Day_Hr
 *$Wage_Per_Hr)) ;;
             
-		 0)echo "Daily Employee Wage part Time - "$DailyEmpWage=$(($Parttime_Hr
+		 0)echo "Daily Employee Wage part Time - "$DailyEmpWagepart=$(($Parttime_Hr
 *$Wage_Per_Hr)) ;;
 
             *)echo "wrong choice";;
         esac
 
+working_day_per_month=20
 
+monthly_emp_wage_full=$(( $DailyEmpwagefull*$Working_day_per_month ))
+monthly_emp_wage_part=$(( $DailyEmpwagepart*$Working_day_per_month ))
+echo "monthly wage for full time": $monthly_emp_wage_full
+echo "monthly wage for part time": $monthly_emp_wage_part
